@@ -11,6 +11,8 @@ import ActionSheetPicker_3_0
 
 class AddReminderViewController: UIViewController {
 
+    @IBOutlet weak var head: UIImageView!
+
     @IBOutlet weak var reminderTitleField: UITextField!
     @IBOutlet weak var alarmLabel: UILabel!
     @IBOutlet weak var alarm: UIButton!
@@ -174,13 +176,21 @@ class AddReminderViewController: UIViewController {
         let title = type == "alarm" ?
             "Alarm" :
             type == "birthday" ?
-            birthdays[birthdaySelectedIndex] :
+                birthdays[birthdaySelectedIndex] :
             (type == "workout" ?
                 workoutCodes[workoutSelectedIndex] :
                 reminderTitleField.text)
 
         PostNewReminder(type: type, title: title!, datetime: selectedDate, completion: { success in
-            self.navigationController?.popViewControllerAnimated(true)
+            self.head.transform = CGAffineTransformMakeScale(0.0, 0.0)
+            self.head.hidden = false
+
+            UIView.animateWithDuration(0.7, delay: 0.0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.0, options: .CurveEaseInOut, animations: {
+                self.head.transform = CGAffineTransformIdentity
+            }) { _ in
+                self.head.hidden = true
+                self.navigationController?.popViewControllerAnimated(true)
+            }
         }).start()
     }
 
@@ -188,17 +198,18 @@ class AddReminderViewController: UIViewController {
         let rows = type == "birthday" ? birthdays : workouts
         let selectedIndex = type == "birthday" ? birthdaySelectedIndex : workoutSelectedIndex
 
-        ActionSheetStringPicker.showPickerWithTitle("Choose",
-                                                    rows: rows,
-                                                    initialSelection: selectedIndex,
-                                                    doneBlock: { (picker, index, string) in
-                                                        self.selectButton.setTitle((string as! String), forState: .Normal)
-                                                        if self.type == "birthday" {
-                                                            self.birthdaySelectedIndex = index
-                                                        } else {
-                                                            self.workoutSelectedIndex = index
-                                                        }
-            }, cancelBlock: nil, origin: view)
+        ActionSheetStringPicker
+            .showPickerWithTitle("Choose",
+                                 rows: rows,
+                                 initialSelection: selectedIndex,
+                                 doneBlock: { (picker, index, string) in
+                                    self.selectButton.setTitle((string as! String), forState: .Normal)
+                                    if self.type == "birthday" {
+                                        self.birthdaySelectedIndex = index
+                                    } else {
+                                        self.workoutSelectedIndex = index
+                                    }
+                }, cancelBlock: nil, origin: view)
     }
 
     @IBAction func selectDate(sender: AnyObject) {
@@ -246,7 +257,7 @@ class AddReminderViewController: UIViewController {
         dateFormatter.dateFormat = "HH:mm"
         self.time.setTitle(dateFormatter.stringFromDate(selectedDate), forState: .Normal)
     }
-
+    
     func dismiss() {
         reminderTitleField.resignFirstResponder()
     }

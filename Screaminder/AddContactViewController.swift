@@ -61,7 +61,7 @@ class AddContactViewController: UIViewController {
         newContact.givenName = "Eric"
         newContact.familyName = "The Screaminder"
 
-        let number = CNLabeledValue(label: CNLabelWork, value: CNPhoneNumber(stringValue: "+37253403253"))
+        let number = CNLabeledValue(label: CNLabelWork, value: CNPhoneNumber(stringValue: "+3726682815"))
         newContact.phoneNumbers = [number]
 
         newContact.imageData = UIImagePNGRepresentation(UIImage(named: "img_caller")!)

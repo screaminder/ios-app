@@ -26,7 +26,7 @@ class GetReminders {
                 if let array = response.result.value as? [[String: AnyObject]] {
                     var todos: [Todo] = []
 
-                    for item in array {
+                    for item in array.reverse() {
                         guard let id = item["_id"] as? String,
                             type = item["type"] as? String,
                             title = item["title"] as? String,
