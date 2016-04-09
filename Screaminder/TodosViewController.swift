@@ -12,6 +12,7 @@ class TodosViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var head: UIImageView!
+    @IBOutlet weak var emptyPlaceholder: UILabel!
 
     var todos: [Todo] = []
 
@@ -19,12 +20,18 @@ class TodosViewController: UIViewController, UITableViewDataSource {
         super.loadView()
 
         navigationController?.navigationBarHidden = false
-        title = "Screaminders"
+        navigationItem.titleView = UIImageView(image: UIImage(named: "logo_small"))
 
         tableView.dataSource = self
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
 
         GetReminders(completion: { todos in
             self.todos = todos
+            self.emptyPlaceholder.hidden = todos.count > 0
+
             self.tableView.reloadData()
         }).start()
     }

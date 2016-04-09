@@ -32,7 +32,6 @@ class AddReminderViewController: UIViewController {
     @IBOutlet weak var time: UIButton!
 
     var selectedDate = NSDate()
-    var selectedTime = NSDate()
 
     let birthdays = ["Mother",
                      "Father",
@@ -70,6 +69,10 @@ class AddReminderViewController: UIViewController {
     override func loadView() {
         super.loadView()
 
+        self.selectedDate = NSCalendar.currentCalendar().dateByAddingUnit(.Hour, value: 1, toDate: selectedDate, options: NSCalendarOptions())!
+        setDateTitle()
+        setTimeTitle()
+
         navigationController?.navigationBar.tintColor = GreenColor
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(AuthPhoneViewController.dismiss)))
 
@@ -102,11 +105,13 @@ class AddReminderViewController: UIViewController {
         showTitle(true)
         reminderTitleField.hidden = true
         selectButton.hidden = false
+
+        selectButton.setTitle(birthdaySelectedIndex == 0 ? "PRESS TO SELECT" : birthdays[birthdaySelectedIndex], forState: .Normal)
     }
 
     @IBAction func selectWorkout(sender: AnyObject) {
         type = "workout"
-        titleDescriptionLabel.text = "WHOS BIRTHDAY DO YOU NEED REMINDED?"
+        titleDescriptionLabel.text = "WHAT TYPE OF WORKOUT?"
 
         alarm.alpha = 0.4
         birthday.alpha = 0.4
@@ -117,6 +122,8 @@ class AddReminderViewController: UIViewController {
         showTitle(true)
         reminderTitleField.hidden = true
         selectButton.hidden = false
+
+        selectButton.setTitle(workoutSelectedIndex == 0 ? "PRESS TO SELECT" : workouts[birthdaySelectedIndex], forState: .Normal)
     }
 
     @IBAction func selectAssignment(sender: AnyObject) {
@@ -151,6 +158,10 @@ class AddReminderViewController: UIViewController {
             titleWrapper.shake()
             return
         }
+        if selectButton.titleLabel!.text == "PRESS TO SELECT" && (type == "birthday" || type == "workout") {
+            titleWrapper.shake()
+            return
+        }
         if date.titleLabel!.text == "DATE" {
             date.shake()
             return
@@ -159,6 +170,18 @@ class AddReminderViewController: UIViewController {
             time.shake()
             return
         }
+
+        let title = type == "alarm" ?
+            "Alarm" :
+            type == "birthday" ?
+            birthdays[birthdaySelectedIndex] :
+            (type == "workout" ?
+                workoutCodes[workoutSelectedIndex] :
+                reminderTitleField.text)
+
+        PostNewReminder(type: type, title: title!, datetime: selectedDate, completion: { success in
+            self.navigationController?.popViewControllerAnimated(true)
+        }).start()
     }
 
     @IBAction func selectDropdown(sender: AnyObject) {
@@ -179,6 +202,8 @@ class AddReminderViewController: UIViewController {
     }
 
     @IBAction func selectDate(sender: AnyObject) {
+        dismiss()
+
         ActionSheetDatePicker.showPickerWithTitle("Date", datePickerMode: UIDatePickerMode.Date, selectedDate: selectedDate, doneBlock: { (_, dateStr, _) -> Void in
             if let date = dateStr as? NSDate {
                 var newDate: NSDate = NSCalendar.currentCalendar().dateBySettingUnit(.Year, value: NSCalendar.currentCalendar().component(.Year, fromDate: date), ofDate: date, options: NSCalendarOptions())!
@@ -186,16 +211,21 @@ class AddReminderViewController: UIViewController {
                 newDate = NSCalendar.currentCalendar().dateBySettingUnit(.Day, value: NSCalendar.currentCalendar().component(.Day, fromDate: date), ofDate: newDate, options: NSCalendarOptions())!
 
                 self.selectedDate = newDate
-
-                let dateFormatter = NSDateFormatter()
-                dateFormatter.dateFormat = "dd.MM.yyyy"
-                self.date.setTitle(dateFormatter.stringFromDate(date), forState: .Normal)
+                self.setDateTitle()
             }
             }, cancelBlock: { (picker) -> Void in
             }, origin: self.view)
     }
 
+    func setDateTitle() {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd.MM.yyyy"
+        self.date.setTitle(dateFormatter.stringFromDate(selectedDate), forState: .Normal)
+    }
+
     @IBAction func selectTime(sender: AnyObject) {
+        dismiss()
+
         ActionSheetDatePicker.showPickerWithTitle("Time", datePickerMode: UIDatePickerMode.Time, selectedDate: selectedDate, doneBlock: { (_, dateStr, _) -> Void in
             if let date = dateStr as? NSDate {
                 let newDate: NSDate = NSCalendar.currentCalendar().dateBySettingHour(NSCalendar.currentCalendar().component(.Hour, fromDate: date),
@@ -205,15 +235,18 @@ class AddReminderViewController: UIViewController {
                     options: NSCalendarOptions())!
 
                 self.selectedDate = newDate
-
-                let dateFormatter = NSDateFormatter()
-                dateFormatter.dateFormat = "HH:mm"
-                self.time.setTitle(dateFormatter.stringFromDate(date), forState: .Normal)
+                self.setTimeTitle()
             }
             }, cancelBlock: { (picker) -> Void in
             }, origin: self.view)
     }
-    
+
+    func setTimeTitle() {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        self.time.setTitle(dateFormatter.stringFromDate(selectedDate), forState: .Normal)
+    }
+
     func dismiss() {
         reminderTitleField.resignFirstResponder()
     }

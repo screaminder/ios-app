@@ -30,8 +30,8 @@ class TodoTableViewCell: UITableViewCell {
             whenLabel.textColor = PurpleColor
             iconView.image = UIImage(named: "ic_alarm")
         case "workout":
-            titleLabel.textColor = YellowColor
-            whenLabel.textColor = RedColor
+            titleLabel.textColor = UIColor.yellowColor()
+            whenLabel.textColor = UIColor.yellowColor()
             iconView.image = UIImage(named: "ic_gym")
         case "birthday":
             titleLabel.textColor = GreenColor

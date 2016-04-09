@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43826BD21CB9794700D3B1FC /* PostNewReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43826BD11CB9794700D3B1FC /* PostNewReminder.swift */; };
 		4384ED3B1CB8E00C002BF4E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED3A1CB8E00C002BF4E6 /* AppDelegate.swift */; };
 		4384ED3D1CB8E00C002BF4E6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED3C1CB8E00C002BF4E6 /* NavigationController.swift */; };
 		4384ED401CB8E00C002BF4E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED3E1CB8E00C002BF4E6 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43826BD11CB9794700D3B1FC /* PostNewReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostNewReminder.swift; sourceTree = "<group>"; };
 		4384ED371CB8E00C002BF4E6 /* Screaminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screaminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4384ED3A1CB8E00C002BF4E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4384ED3C1CB8E00C002BF4E6 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				4384ED801CB93AB9002BF4E6 /* PostAuthPhone.swift */,
 				43E215A41CB9498100CBCC8A /* GetReminders.swift */,
+				43826BD11CB9794700D3B1FC /* PostNewReminder.swift */,
 			);
 			name = ApiClient;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				4384ED751CB90288002BF4E6 /* AddContactViewController.swift in Sources */,
 				4384ED6C1CB8FA53002BF4E6 /* AuthPhoneViewController.swift in Sources */,
 				43E215A51CB9498100CBCC8A /* GetReminders.swift in Sources */,
+				43826BD21CB9794700D3B1FC /* PostNewReminder.swift in Sources */,
 				4384ED3B1CB8E00C002BF4E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

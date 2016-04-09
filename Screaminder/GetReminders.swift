@@ -20,9 +20,32 @@ class GetReminders {
     func start() {
         Alamofire.request(.GET, "https://screaminder-api.herokuapp.com/items",
             parameters: [:],
-            encoding: .JSON, headers: ["Authorization": "Bearer \(TokenStore.read())"])
+            encoding: .JSON,
+            headers: ["Authorization": "Bearer \(TokenStore.read()!)"])
             .responseJSON { response in
-                if let json = response.result.value {
+                if let array = response.result.value as? [[String: AnyObject]] {
+                    var todos: [Todo] = []
+
+                    for item in array {
+                        guard let id = item["_id"] as? String,
+                            type = item["type"] as? String,
+                            title = item["title"] as? String,
+                            datetime = item["datetime"] as? String,
+                            done = item["done"] as? Bool,
+                            editable = item["editable"] as? Bool
+                            else {
+                                continue
+                        }
+
+                        let todo = Todo(id: id, type: type, title: title, datetime: datetime, done: done, editable: editable)
+                        if todo.inFuture || todo.editable {
+                            todos.append(todo)
+                        }
+                    }
+
+                    self.completion(todos)
+                } else {
+                    self.completion([])
                 }
         }
     }
