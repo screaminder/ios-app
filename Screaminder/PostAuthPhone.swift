@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import Alamofire
+
+class PostAuthPhone {
+
+    var number: String?
+
+    init(number: String) {
+        self.number = number
+    }
+
+    // "Authorization": "Bearer \(TokenStore.read())"
+    func start() {
+        Alamofire.request(.POST, "https://screaminder-api.herokuapp.com/auth", parameters: ["phone": self.number!], encoding: .JSON, headers: [:]).responseJSON { response in
+            if let json = response.result.value, token = json["key"] as? String {
+                TokenStore.save(token )
+            }
+        }
+    }
+
+}

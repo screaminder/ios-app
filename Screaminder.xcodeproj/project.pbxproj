@@ -8,20 +8,73 @@
 
 /* Begin PBXBuildFile section */
 		4384ED3B1CB8E00C002BF4E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED3A1CB8E00C002BF4E6 /* AppDelegate.swift */; };
-		4384ED3D1CB8E00C002BF4E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED3C1CB8E00C002BF4E6 /* ViewController.swift */; };
+		4384ED3D1CB8E00C002BF4E6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED3C1CB8E00C002BF4E6 /* NavigationController.swift */; };
 		4384ED401CB8E00C002BF4E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED3E1CB8E00C002BF4E6 /* Main.storyboard */; };
-		4384ED421CB8E00C002BF4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED411CB8E00C002BF4E6 /* Assets.xcassets */; };
 		4384ED451CB8E00C002BF4E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED431CB8E00C002BF4E6 /* LaunchScreen.storyboard */; };
+		4384ED5B1CB8F69A002BF4E6 /* AlegreyaSansSC-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED4D1CB8F69A002BF4E6 /* AlegreyaSansSC-Black.ttf */; };
+		4384ED5C1CB8F69A002BF4E6 /* AlegreyaSansSC-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED4E1CB8F69A002BF4E6 /* AlegreyaSansSC-BlackItalic.ttf */; };
+		4384ED5D1CB8F69A002BF4E6 /* AlegreyaSansSC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED4F1CB8F69A002BF4E6 /* AlegreyaSansSC-Bold.ttf */; };
+		4384ED5E1CB8F69A002BF4E6 /* AlegreyaSansSC-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED501CB8F69A002BF4E6 /* AlegreyaSansSC-BoldItalic.ttf */; };
+		4384ED5F1CB8F69A002BF4E6 /* AlegreyaSansSC-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED511CB8F69A002BF4E6 /* AlegreyaSansSC-ExtraBold.ttf */; };
+		4384ED601CB8F69A002BF4E6 /* AlegreyaSansSC-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED521CB8F69A002BF4E6 /* AlegreyaSansSC-ExtraBoldItalic.ttf */; };
+		4384ED611CB8F69A002BF4E6 /* AlegreyaSansSC-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED531CB8F69A002BF4E6 /* AlegreyaSansSC-Italic.ttf */; };
+		4384ED621CB8F69A002BF4E6 /* AlegreyaSansSC-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED541CB8F69A002BF4E6 /* AlegreyaSansSC-Light.ttf */; };
+		4384ED631CB8F69A002BF4E6 /* AlegreyaSansSC-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED551CB8F69A002BF4E6 /* AlegreyaSansSC-LightItalic.ttf */; };
+		4384ED641CB8F69A002BF4E6 /* AlegreyaSansSC-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED561CB8F69A002BF4E6 /* AlegreyaSansSC-Medium.ttf */; };
+		4384ED651CB8F69A002BF4E6 /* AlegreyaSansSC-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED571CB8F69A002BF4E6 /* AlegreyaSansSC-MediumItalic.ttf */; };
+		4384ED661CB8F69A002BF4E6 /* AlegreyaSansSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED581CB8F69A002BF4E6 /* AlegreyaSansSC-Regular.ttf */; };
+		4384ED671CB8F69A002BF4E6 /* AlegreyaSansSC-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED591CB8F69A002BF4E6 /* AlegreyaSansSC-Thin.ttf */; };
+		4384ED681CB8F69A002BF4E6 /* AlegreyaSansSC-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED5A1CB8F69A002BF4E6 /* AlegreyaSansSC-ThinItalic.ttf */; };
+		4384ED6A1CB8F864002BF4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED691CB8F864002BF4E6 /* Assets.xcassets */; };
+		4384ED6C1CB8FA53002BF4E6 /* AuthPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED6B1CB8FA53002BF4E6 /* AuthPhoneViewController.swift */; };
+		4384ED6F1CB8FC43002BF4E6 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED6E1CB8FC43002BF4E6 /* TokenStore.swift */; };
+		4384ED711CB8FF86002BF4E6 /* UIView (Shake).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED701CB8FF86002BF4E6 /* UIView (Shake).swift */; };
+		4384ED751CB90288002BF4E6 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED741CB90288002BF4E6 /* AddContactViewController.swift */; };
+		4384ED771CB91FF3002BF4E6 /* TodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED761CB91FF3002BF4E6 /* TodosViewController.swift */; };
+		4384ED7A1CB921DF002BF4E6 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED791CB921DF002BF4E6 /* Todo.swift */; };
+		4384ED7D1CB92315002BF4E6 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED7C1CB92315002BF4E6 /* TodoTableViewCell.swift */; };
+		4384ED7F1CB92F30002BF4E6 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED7E1CB92F30002BF4E6 /* AddReminderViewController.swift */; };
+		4384ED811CB93AB9002BF4E6 /* PostAuthPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED801CB93AB9002BF4E6 /* PostAuthPhone.swift */; };
+		43E215A51CB9498100CBCC8A /* GetReminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E215A41CB9498100CBCC8A /* GetReminders.swift */; };
+		6938A43DABE011E4D0893998 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE07F48506172C795FF3234 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4384ED371CB8E00C002BF4E6 /* Screaminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screaminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4384ED3A1CB8E00C002BF4E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4384ED3C1CB8E00C002BF4E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4384ED3C1CB8E00C002BF4E6 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		4384ED3F1CB8E00C002BF4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4384ED411CB8E00C002BF4E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4384ED441CB8E00C002BF4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4384ED461CB8E00C002BF4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4384ED4D1CB8F69A002BF4E6 /* AlegreyaSansSC-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-Black.ttf"; sourceTree = "<group>"; };
+		4384ED4E1CB8F69A002BF4E6 /* AlegreyaSansSC-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-BlackItalic.ttf"; sourceTree = "<group>"; };
+		4384ED4F1CB8F69A002BF4E6 /* AlegreyaSansSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-Bold.ttf"; sourceTree = "<group>"; };
+		4384ED501CB8F69A002BF4E6 /* AlegreyaSansSC-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-BoldItalic.ttf"; sourceTree = "<group>"; };
+		4384ED511CB8F69A002BF4E6 /* AlegreyaSansSC-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-ExtraBold.ttf"; sourceTree = "<group>"; };
+		4384ED521CB8F69A002BF4E6 /* AlegreyaSansSC-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		4384ED531CB8F69A002BF4E6 /* AlegreyaSansSC-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-Italic.ttf"; sourceTree = "<group>"; };
+		4384ED541CB8F69A002BF4E6 /* AlegreyaSansSC-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-Light.ttf"; sourceTree = "<group>"; };
+		4384ED551CB8F69A002BF4E6 /* AlegreyaSansSC-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-LightItalic.ttf"; sourceTree = "<group>"; };
+		4384ED561CB8F69A002BF4E6 /* AlegreyaSansSC-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-Medium.ttf"; sourceTree = "<group>"; };
+		4384ED571CB8F69A002BF4E6 /* AlegreyaSansSC-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-MediumItalic.ttf"; sourceTree = "<group>"; };
+		4384ED581CB8F69A002BF4E6 /* AlegreyaSansSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-Regular.ttf"; sourceTree = "<group>"; };
+		4384ED591CB8F69A002BF4E6 /* AlegreyaSansSC-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-Thin.ttf"; sourceTree = "<group>"; };
+		4384ED5A1CB8F69A002BF4E6 /* AlegreyaSansSC-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-ThinItalic.ttf"; sourceTree = "<group>"; };
+		4384ED691CB8F864002BF4E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4384ED6B1CB8FA53002BF4E6 /* AuthPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPhoneViewController.swift; sourceTree = "<group>"; };
+		4384ED6E1CB8FC43002BF4E6 /* TokenStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		4384ED701CB8FF86002BF4E6 /* UIView (Shake).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView (Shake).swift"; sourceTree = "<group>"; };
+		4384ED741CB90288002BF4E6 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		4384ED761CB91FF3002BF4E6 /* TodosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodosViewController.swift; sourceTree = "<group>"; };
+		4384ED791CB921DF002BF4E6 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		4384ED7C1CB92315002BF4E6 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		4384ED7E1CB92F30002BF4E6 /* AddReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
+		4384ED801CB93AB9002BF4E6 /* PostAuthPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAuthPhone.swift; sourceTree = "<group>"; };
+		4384ED821CB93B1F002BF4E6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../Bridging-Header.h"; sourceTree = "<group>"; };
+		43E215A41CB9498100CBCC8A /* GetReminders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetReminders.swift; sourceTree = "<group>"; };
+		CAE07F48506172C795FF3234 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B32835CB891DF395B48DDE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EC6D520A04517972FA91EAA3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6938A43DABE011E4D0893998 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +94,8 @@
 			children = (
 				4384ED391CB8E00C002BF4E6 /* Screaminder */,
 				4384ED381CB8E00C002BF4E6 /* Products */,
+				ED5BEB9C246C29B710B86E56 /* Pods */,
+				A8250ADDFF7A742880B67F08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +110,104 @@
 		4384ED391CB8E00C002BF4E6 /* Screaminder */ = {
 			isa = PBXGroup;
 			children = (
+				4384ED781CB921D4002BF4E6 /* Models */,
 				4384ED3A1CB8E00C002BF4E6 /* AppDelegate.swift */,
-				4384ED3C1CB8E00C002BF4E6 /* ViewController.swift */,
+				4384ED3C1CB8E00C002BF4E6 /* NavigationController.swift */,
+				4384ED6B1CB8FA53002BF4E6 /* AuthPhoneViewController.swift */,
+				4384ED741CB90288002BF4E6 /* AddContactViewController.swift */,
+				4384ED761CB91FF3002BF4E6 /* TodosViewController.swift */,
+				4384ED7E1CB92F30002BF4E6 /* AddReminderViewController.swift */,
+				4384ED7B1CB92302002BF4E6 /* Cells */,
+				4384ED731CB90069002BF4E6 /* ApiClient */,
+				4384ED6D1CB8FC18002BF4E6 /* Storage */,
+				4384ED721CB8FF8B002BF4E6 /* Extensions */,
 				4384ED3E1CB8E00C002BF4E6 /* Main.storyboard */,
-				4384ED411CB8E00C002BF4E6 /* Assets.xcassets */,
 				4384ED431CB8E00C002BF4E6 /* LaunchScreen.storyboard */,
+				4384ED691CB8F864002BF4E6 /* Assets.xcassets */,
 				4384ED461CB8E00C002BF4E6 /* Info.plist */,
+				4384ED821CB93B1F002BF4E6 /* Bridging-Header.h */,
+				4384ED4C1CB8F609002BF4E6 /* Fonts */,
 			);
 			path = Screaminder;
+			sourceTree = "<group>";
+		};
+		4384ED4C1CB8F609002BF4E6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4384ED4D1CB8F69A002BF4E6 /* AlegreyaSansSC-Black.ttf */,
+				4384ED4E1CB8F69A002BF4E6 /* AlegreyaSansSC-BlackItalic.ttf */,
+				4384ED4F1CB8F69A002BF4E6 /* AlegreyaSansSC-Bold.ttf */,
+				4384ED501CB8F69A002BF4E6 /* AlegreyaSansSC-BoldItalic.ttf */,
+				4384ED511CB8F69A002BF4E6 /* AlegreyaSansSC-ExtraBold.ttf */,
+				4384ED521CB8F69A002BF4E6 /* AlegreyaSansSC-ExtraBoldItalic.ttf */,
+				4384ED531CB8F69A002BF4E6 /* AlegreyaSansSC-Italic.ttf */,
+				4384ED541CB8F69A002BF4E6 /* AlegreyaSansSC-Light.ttf */,
+				4384ED551CB8F69A002BF4E6 /* AlegreyaSansSC-LightItalic.ttf */,
+				4384ED561CB8F69A002BF4E6 /* AlegreyaSansSC-Medium.ttf */,
+				4384ED571CB8F69A002BF4E6 /* AlegreyaSansSC-MediumItalic.ttf */,
+				4384ED581CB8F69A002BF4E6 /* AlegreyaSansSC-Regular.ttf */,
+				4384ED591CB8F69A002BF4E6 /* AlegreyaSansSC-Thin.ttf */,
+				4384ED5A1CB8F69A002BF4E6 /* AlegreyaSansSC-ThinItalic.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		4384ED6D1CB8FC18002BF4E6 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				4384ED6E1CB8FC43002BF4E6 /* TokenStore.swift */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		4384ED721CB8FF8B002BF4E6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4384ED701CB8FF86002BF4E6 /* UIView (Shake).swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4384ED731CB90069002BF4E6 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				4384ED801CB93AB9002BF4E6 /* PostAuthPhone.swift */,
+				43E215A41CB9498100CBCC8A /* GetReminders.swift */,
+			);
+			name = ApiClient;
+			sourceTree = "<group>";
+		};
+		4384ED781CB921D4002BF4E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4384ED791CB921DF002BF4E6 /* Todo.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4384ED7B1CB92302002BF4E6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4384ED7C1CB92315002BF4E6 /* TodoTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		A8250ADDFF7A742880B67F08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAE07F48506172C795FF3234 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED5BEB9C246C29B710B86E56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC6D520A04517972FA91EAA3 /* Pods.debug.xcconfig */,
+				D6B32835CB891DF395B48DDE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4384ED491CB8E00C002BF4E6 /* Build configuration list for PBXNativeTarget "Screaminder" */;
 			buildPhases = (
+				067C6E689B934BB1AC63F6A2 /* Check Pods Manifest.lock */,
 				4384ED331CB8E00C002BF4E6 /* Sources */,
 				4384ED341CB8E00C002BF4E6 /* Frameworks */,
 				4384ED351CB8E00C002BF4E6 /* Resources */,
+				28F573CBB3AD0E991A4E8F31 /* Embed Pods Frameworks */,
+				F755AD1A91CC2DBCFB8618A4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,20 +271,92 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4384ED5E1CB8F69A002BF4E6 /* AlegreyaSansSC-BoldItalic.ttf in Resources */,
 				4384ED451CB8E00C002BF4E6 /* LaunchScreen.storyboard in Resources */,
-				4384ED421CB8E00C002BF4E6 /* Assets.xcassets in Resources */,
+				4384ED661CB8F69A002BF4E6 /* AlegreyaSansSC-Regular.ttf in Resources */,
+				4384ED5C1CB8F69A002BF4E6 /* AlegreyaSansSC-BlackItalic.ttf in Resources */,
+				4384ED641CB8F69A002BF4E6 /* AlegreyaSansSC-Medium.ttf in Resources */,
+				4384ED621CB8F69A002BF4E6 /* AlegreyaSansSC-Light.ttf in Resources */,
+				4384ED6A1CB8F864002BF4E6 /* Assets.xcassets in Resources */,
 				4384ED401CB8E00C002BF4E6 /* Main.storyboard in Resources */,
+				4384ED681CB8F69A002BF4E6 /* AlegreyaSansSC-ThinItalic.ttf in Resources */,
+				4384ED671CB8F69A002BF4E6 /* AlegreyaSansSC-Thin.ttf in Resources */,
+				4384ED611CB8F69A002BF4E6 /* AlegreyaSansSC-Italic.ttf in Resources */,
+				4384ED601CB8F69A002BF4E6 /* AlegreyaSansSC-ExtraBoldItalic.ttf in Resources */,
+				4384ED5D1CB8F69A002BF4E6 /* AlegreyaSansSC-Bold.ttf in Resources */,
+				4384ED5B1CB8F69A002BF4E6 /* AlegreyaSansSC-Black.ttf in Resources */,
+				4384ED631CB8F69A002BF4E6 /* AlegreyaSansSC-LightItalic.ttf in Resources */,
+				4384ED651CB8F69A002BF4E6 /* AlegreyaSansSC-MediumItalic.ttf in Resources */,
+				4384ED5F1CB8F69A002BF4E6 /* AlegreyaSansSC-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		067C6E689B934BB1AC63F6A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		28F573CBB3AD0E991A4E8F31 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F755AD1A91CC2DBCFB8618A4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4384ED331CB8E00C002BF4E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4384ED3D1CB8E00C002BF4E6 /* ViewController.swift in Sources */,
+				4384ED7F1CB92F30002BF4E6 /* AddReminderViewController.swift in Sources */,
+				4384ED811CB93AB9002BF4E6 /* PostAuthPhone.swift in Sources */,
+				4384ED711CB8FF86002BF4E6 /* UIView (Shake).swift in Sources */,
+				4384ED3D1CB8E00C002BF4E6 /* NavigationController.swift in Sources */,
+				4384ED771CB91FF3002BF4E6 /* TodosViewController.swift in Sources */,
+				4384ED7D1CB92315002BF4E6 /* TodoTableViewCell.swift in Sources */,
+				4384ED7A1CB921DF002BF4E6 /* Todo.swift in Sources */,
+				4384ED6F1CB8FC43002BF4E6 /* TokenStore.swift in Sources */,
+				4384ED751CB90288002BF4E6 /* AddContactViewController.swift in Sources */,
+				4384ED6C1CB8FA53002BF4E6 /* AuthPhoneViewController.swift in Sources */,
+				43E215A51CB9498100CBCC8A /* GetReminders.swift in Sources */,
 				4384ED3B1CB8E00C002BF4E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +468,7 @@
 		};
 		4384ED4A1CB8E00C002BF4E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC6D520A04517972FA91EAA3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Screaminder/Info.plist;
@@ -258,6 +480,7 @@
 		};
 		4384ED4B1CB8E00C002BF4E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B32835CB891DF395B48DDE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Screaminder/Info.plist;
@@ -286,6 +509,7 @@
 				4384ED4B1CB8E00C002BF4E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,13 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.0.4)
+  - Alamofire (3.1.5)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (= 2.0.4)
+  - Alamofire (~> 3.1.5)
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 860466cb4a66854e6acb590071ecee404b48f49d
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+
+COCOAPODS: 0.39.0
