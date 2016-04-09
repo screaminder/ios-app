@@ -22,8 +22,6 @@ class GetReminders {
             parameters: [:],
             encoding: .JSON, headers: ["Authorization": "Bearer \(TokenStore.read())"])
             .responseJSON { response in
-                print(response.result.value)
-
                 if let json = response.result.value {
                 }
         }

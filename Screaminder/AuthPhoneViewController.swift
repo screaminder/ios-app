@@ -15,13 +15,20 @@ class AuthPhoneViewController: UIViewController {
 
     @IBOutlet weak var badgeTop: NSLayoutConstraint!
     @IBOutlet weak var numberField: UITextField!
+    @IBOutlet weak var doneButton: UIButton!
 
     override func loadView() {
         super.loadView()
 
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(AuthPhoneViewController.dismiss)))
-
         navigationController?.setNavigationBarHidden(true, animated: false)
+
+        numberField.layer.cornerRadius = numberField.frame.height / 2
+        numberField.backgroundColor = UIColor.clearColor()
+        numberField.layer.borderColor = RedColor.CGColor
+        numberField.layer.borderWidth = 2.0
+
+        doneButton.layer.cornerRadius = 4.0
     }
 
     @IBAction func done(sender: AnyObject) {
