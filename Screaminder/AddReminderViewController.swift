@@ -188,8 +188,11 @@ class AddReminderViewController: UIViewController {
             UIView.animateWithDuration(0.7, delay: 0.0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.0, options: .CurveEaseInOut, animations: {
                 self.head.transform = CGAffineTransformIdentity
             }) { _ in
-                self.head.hidden = true
-                self.navigationController?.popViewControllerAnimated(true)
+                let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.4 * Double(NSEC_PER_SEC)))
+                dispatch_after(delayTime, dispatch_get_main_queue()) {
+                    self.navigationController?.popViewControllerAnimated(true)
+                    self.head.hidden = true
+                }
             }
         }).start()
     }

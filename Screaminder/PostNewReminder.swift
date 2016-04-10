@@ -24,7 +24,7 @@ class PostNewReminder {
         self.title = title
 
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.000'Z'"
+        dateFormatter.dateFormat = Todo.dateformat
 
         self.datetime = dateFormatter.stringFromDate(datetime)
     }

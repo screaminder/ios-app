@@ -21,7 +21,7 @@ class TodoTableViewCell: UITableViewCell {
     @IBOutlet weak var iconView: UIImageView!
 
     func bind(todo: Todo) {
-        titleLabel.text = todo.title
+        titleLabel.text = todo.title.lowercaseString
         whenLabel.text = todo.time
 
         switch todo.type {
