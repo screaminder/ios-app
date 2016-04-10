@@ -54,14 +54,14 @@ class AddReminderViewController: UIViewController {
                         "grouptraining",
                         "teamsports"]
 
-    let workouts = ["Yoga",
-                    "Walking",
-                    "Swimming",
-                    "Running",
-                    "Martial arts",
-                    "Gym",
-                    "Group training",
-                    "Teamsports"]
+    let workouts = ["yoga",
+                    "walking",
+                    "swimming",
+                    "running",
+                    "martial arts",
+                    "gym",
+                    "group training",
+                    "teamsports"]
 
     var type: String = ""
 

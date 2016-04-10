@@ -18,9 +18,17 @@ class TodoTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var whenLabel: UILabel!
 
+    @IBOutlet weak var markAdDoneButton: UIButton!
+
     @IBOutlet weak var iconView: UIImageView!
 
+    var doneHandler: (() -> ())?
+
+    var todo: Todo?
+
     func bind(todo: Todo) {
+        self.todo = todo
+
         titleLabel.text = todo.title.lowercaseString
         whenLabel.text = todo.time
 
@@ -42,6 +50,23 @@ class TodoTableViewCell: UITableViewCell {
             whenLabel.textColor = RedColor
             iconView.image = UIImage(named: "ic_assignment")
         }
+
+        markAdDoneButton.hidden = !todo.editable
+        if todo.editable {
+            whenLabel.text = "press to mark as done"
+            iconView.image = UIImage(named: "img_caller")
+        }
     }
 
+    @IBAction func markAsDone(sender: AnyObject) {
+        PutMarkAsDone(id: todo!.id) { success in
+            if success {
+                self.doneHandler?()
+            } else {
+                self.shake()
+                self.whenLabel.text = "error, try again"
+            }
+        }.start()
+        
+    }
 }

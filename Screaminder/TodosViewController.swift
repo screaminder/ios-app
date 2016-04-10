@@ -28,6 +28,10 @@ class TodosViewController: UIViewController, UITableViewDataSource {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
+        refresh()
+    }
+
+    func refresh() {
         GetReminders(completion: { todos in
             self.todos = todos
             self.emptyPlaceholder.hidden = todos.count > 0
@@ -59,6 +63,9 @@ class TodosViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TODO", forIndexPath: indexPath) as! TodoTableViewCell
         cell.bind(todos[indexPath.row])
+        cell.doneHandler = {
+            self.refresh()
+        }
         return cell
     }
 
