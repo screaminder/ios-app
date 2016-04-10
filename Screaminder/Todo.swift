@@ -29,22 +29,22 @@ class Todo {
             return "soon, you motherfucker"
         } else if datetime.isInToday() {
             return "today or so"
+        } else if datetime.isInTomorrow() {
+            return "tomorrow"
         } else if datetime.isBefore(.Minute, ofDate: NSDate() + 1.weeks) {
             return "less than 1 week"
-        } else if datetime.isBefore(.Minute, ofDate: NSDate() + 2.weeks) {
-            return "in a few weeks probably"
         } else if datetime.isBefore(.Minute, ofDate: NSDate() + 3.weeks) {
-            return "in three weeks probably"
+            return "in a few weeks probably"
         } else if datetime.isBefore(.Minute, ofDate: NSDate() + 1.months) {
-            return "in a month"
-        } else if datetime.isBefore(.Minute, ofDate: NSDate() + 3.months) {
+            return "less than a month"
+        } else if datetime.isBefore(.Minute, ofDate: NSDate() + 4.months) {
             return "in a couple of months"
         } else if datetime.isBefore(.Minute, ofDate: NSDate() + 6.months) {
             return "in half a year"
         } else if datetime.isBefore(.Minute, ofDate: NSDate() + 1.years) {
-            return "in an epic year"
+            return "less than a year"
         } else if datetime.isBefore(.Minute, ofDate: NSDate() + 2.years) {
-            return "in two fucking years"
+            return "in couple of fucking years"
         } else if datetime.isBefore(.Minute, ofDate: NSDate() + 3.years) {
             return "in three fucking years"
         }

@@ -24,11 +24,13 @@ class PutMarkAsDone {
     func start() {
         let params = ["done": true]
 
-        Alamofire.request(.POST, "https://screaminder-api.herokuapp.com/items/\(self.id)",
+        Alamofire.request(.PUT, "https://screaminder-api.herokuapp.com/items/\(self.id)",
             parameters: params,
             encoding: .JSON,
             headers: ["Authorization": "Bearer \(UserStore.readBearer()!)"])
             .responseJSON { response in
+                print(response.result.value)
+                
                 if let _ = response.result.value {
                     self.completion(true)
                 } else {

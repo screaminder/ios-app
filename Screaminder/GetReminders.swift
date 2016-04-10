@@ -23,8 +23,6 @@ class GetReminders {
             encoding: .JSON,
             headers: ["Authorization": "Bearer \(UserStore.readBearer()!)"])
             .responseJSON { response in
-                print(response.result.value)
-
                 if let array = response.result.value as? [[String: AnyObject]] {
                     var todos: [Todo] = []
 
