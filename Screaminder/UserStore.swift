@@ -8,20 +8,27 @@
 
 import Foundation
 
-class TokenStore {
+class UserStore {
 
     static let DocumentsDirectory = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
-    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("token")
+    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("user_store")
 
-    static func save(token: String) {
+    static func save(token: User) {
         NSKeyedArchiver.archiveRootObject(token, toFile: ArchiveURL.path!)
     }
 
-    static func read() -> String? {
-        if let user = NSKeyedUnarchiver.unarchiveObjectWithFile(ArchiveURL.path!) as? String {
+    static func read() -> User? {
+        if let user = NSKeyedUnarchiver.unarchiveObjectWithFile(ArchiveURL.path!) as? User {
             return user
         }
         return nil
+    }
+
+    static func readBearer() -> String? {
+        if let user = read() {
+            return user.key
+        }
+        return ""
     }
 
     static func clear() {

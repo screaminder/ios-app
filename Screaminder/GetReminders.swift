@@ -21,7 +21,7 @@ class GetReminders {
         Alamofire.request(.GET, "https://screaminder-api.herokuapp.com/items",
             parameters: [:],
             encoding: .JSON,
-            headers: ["Authorization": "Bearer \(TokenStore.read()!)"])
+            headers: ["Authorization": "Bearer \(UserStore.readBearer()!)"])
             .responseJSON { response in
                 if let array = response.result.value as? [[String: AnyObject]] {
                     var todos: [Todo] = []

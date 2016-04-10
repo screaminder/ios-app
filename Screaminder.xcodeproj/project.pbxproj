@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432FF1B11CBA486E00F08D7D /* VerifyPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FF1B01CBA486E00F08D7D /* VerifyPhoneViewController.swift */; };
+		432FF1B31CBA48FE00F08D7D /* PostVerificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FF1B21CBA48FE00F08D7D /* PostVerificationCode.swift */; };
+		432FF1B51CBA496500F08D7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FF1B41CBA496500F08D7D /* User.swift */; };
 		43826BD21CB9794700D3B1FC /* PostNewReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43826BD11CB9794700D3B1FC /* PostNewReminder.swift */; };
 		4384ED3B1CB8E00C002BF4E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED3A1CB8E00C002BF4E6 /* AppDelegate.swift */; };
 		4384ED3D1CB8E00C002BF4E6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED3C1CB8E00C002BF4E6 /* NavigationController.swift */; };
@@ -28,7 +31,7 @@
 		4384ED681CB8F69A002BF4E6 /* AlegreyaSansSC-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED5A1CB8F69A002BF4E6 /* AlegreyaSansSC-ThinItalic.ttf */; };
 		4384ED6A1CB8F864002BF4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4384ED691CB8F864002BF4E6 /* Assets.xcassets */; };
 		4384ED6C1CB8FA53002BF4E6 /* AuthPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED6B1CB8FA53002BF4E6 /* AuthPhoneViewController.swift */; };
-		4384ED6F1CB8FC43002BF4E6 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED6E1CB8FC43002BF4E6 /* TokenStore.swift */; };
+		4384ED6F1CB8FC43002BF4E6 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED6E1CB8FC43002BF4E6 /* UserStore.swift */; };
 		4384ED711CB8FF86002BF4E6 /* UIView (Shake).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED701CB8FF86002BF4E6 /* UIView (Shake).swift */; };
 		4384ED751CB90288002BF4E6 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED741CB90288002BF4E6 /* AddContactViewController.swift */; };
 		4384ED771CB91FF3002BF4E6 /* TodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384ED761CB91FF3002BF4E6 /* TodosViewController.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		432FF1B01CBA486E00F08D7D /* VerifyPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyPhoneViewController.swift; sourceTree = "<group>"; };
+		432FF1B21CBA48FE00F08D7D /* PostVerificationCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVerificationCode.swift; sourceTree = "<group>"; };
+		432FF1B41CBA496500F08D7D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		43826BD11CB9794700D3B1FC /* PostNewReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostNewReminder.swift; sourceTree = "<group>"; };
 		4384ED371CB8E00C002BF4E6 /* Screaminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screaminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4384ED3A1CB8E00C002BF4E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +70,7 @@
 		4384ED5A1CB8F69A002BF4E6 /* AlegreyaSansSC-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSansSC-ThinItalic.ttf"; sourceTree = "<group>"; };
 		4384ED691CB8F864002BF4E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4384ED6B1CB8FA53002BF4E6 /* AuthPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPhoneViewController.swift; sourceTree = "<group>"; };
-		4384ED6E1CB8FC43002BF4E6 /* TokenStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		4384ED6E1CB8FC43002BF4E6 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		4384ED701CB8FF86002BF4E6 /* UIView (Shake).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView (Shake).swift"; sourceTree = "<group>"; };
 		4384ED741CB90288002BF4E6 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		4384ED761CB91FF3002BF4E6 /* TodosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodosViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 				4384ED3A1CB8E00C002BF4E6 /* AppDelegate.swift */,
 				4384ED3C1CB8E00C002BF4E6 /* NavigationController.swift */,
 				4384ED6B1CB8FA53002BF4E6 /* AuthPhoneViewController.swift */,
+				432FF1B01CBA486E00F08D7D /* VerifyPhoneViewController.swift */,
 				4384ED741CB90288002BF4E6 /* AddContactViewController.swift */,
 				4384ED761CB91FF3002BF4E6 /* TodosViewController.swift */,
 				4384ED7E1CB92F30002BF4E6 /* AddReminderViewController.swift */,
@@ -157,7 +164,7 @@
 		4384ED6D1CB8FC18002BF4E6 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				4384ED6E1CB8FC43002BF4E6 /* TokenStore.swift */,
+				4384ED6E1CB8FC43002BF4E6 /* UserStore.swift */,
 			);
 			name = Storage;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				4384ED801CB93AB9002BF4E6 /* PostAuthPhone.swift */,
+				432FF1B21CBA48FE00F08D7D /* PostVerificationCode.swift */,
 				43E215A41CB9498100CBCC8A /* GetReminders.swift */,
 				43826BD11CB9794700D3B1FC /* PostNewReminder.swift */,
 			);
@@ -184,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				4384ED791CB921DF002BF4E6 /* Todo.swift */,
+				432FF1B41CBA496500F08D7D /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -226,6 +235,7 @@
 				4384ED351CB8E00C002BF4E6 /* Resources */,
 				28F573CBB3AD0E991A4E8F31 /* Embed Pods Frameworks */,
 				F755AD1A91CC2DBCFB8618A4 /* Copy Pods Resources */,
+				432FF1AF1CBA430E00F08D7D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -327,6 +337,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		432FF1AF1CBA430E00F08D7D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ba06af5523f20047db36765c6a0d2b573d5ddf67 b280942158796087ede0e248bf055d459246fddd1839287d72aa4ad79d34b426";
+		};
 		F755AD1A91CC2DBCFB8618A4 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,14 +376,17 @@
 				4384ED811CB93AB9002BF4E6 /* PostAuthPhone.swift in Sources */,
 				4384ED711CB8FF86002BF4E6 /* UIView (Shake).swift in Sources */,
 				4384ED3D1CB8E00C002BF4E6 /* NavigationController.swift in Sources */,
+				432FF1B51CBA496500F08D7D /* User.swift in Sources */,
 				4384ED771CB91FF3002BF4E6 /* TodosViewController.swift in Sources */,
 				4384ED7D1CB92315002BF4E6 /* TodoTableViewCell.swift in Sources */,
+				432FF1B11CBA486E00F08D7D /* VerifyPhoneViewController.swift in Sources */,
 				4384ED7A1CB921DF002BF4E6 /* Todo.swift in Sources */,
-				4384ED6F1CB8FC43002BF4E6 /* TokenStore.swift in Sources */,
+				4384ED6F1CB8FC43002BF4E6 /* UserStore.swift in Sources */,
 				4384ED751CB90288002BF4E6 /* AddContactViewController.swift in Sources */,
 				4384ED6C1CB8FA53002BF4E6 /* AuthPhoneViewController.swift in Sources */,
 				43E215A51CB9498100CBCC8A /* GetReminders.swift in Sources */,
 				43826BD21CB9794700D3B1FC /* PostNewReminder.swift in Sources */,
+				432FF1B31CBA48FE00F08D7D /* PostVerificationCode.swift in Sources */,
 				4384ED3B1CB8E00C002BF4E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

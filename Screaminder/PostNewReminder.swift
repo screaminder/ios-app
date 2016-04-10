@@ -35,7 +35,7 @@ class PostNewReminder {
         Alamofire.request(.POST, "https://screaminder-api.herokuapp.com/items",
             parameters: params,
             encoding: .JSON,
-            headers: ["Authorization": "Bearer \(TokenStore.read()!)"])
+            headers: ["Authorization": "Bearer \(UserStore.readBearer()!)"])
             .responseJSON { response in
                 if let _ = response.result.value {
                     self.completion(true)

@@ -12,13 +12,16 @@ class NavigationController: UINavigationController {
 
     override func loadView() {
         super.loadView()
+        navigationBar.tintColor = GreenColor
 
-        guard let _ = TokenStore.read() else {
+        guard let user = UserStore.read() else {
             pushViewController(storyboard!.instantiateViewControllerWithIdentifier("AuthPhoneViewController"), animated: false)
             return
         }
-
-        navigationBar.tintColor = GreenColor
+        if !user.verified! {
+            pushViewController(storyboard!.instantiateViewControllerWithIdentifier("VerifyPhoneViewController"), animated: false)
+            return
+        }
 
         openList()
     }

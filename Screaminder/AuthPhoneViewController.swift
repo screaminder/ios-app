@@ -29,6 +29,8 @@ class AuthPhoneViewController: UIViewController {
         numberField.layer.borderWidth = 2.0
 
         doneButton.layer.cornerRadius = 4.0
+
+        numberField.attributedPlaceholder = NSAttributedString(string:"here!", attributes:[NSForegroundColorAttributeName: RedColor])
     }
 
     @IBAction func done(sender: AnyObject) {
@@ -36,7 +38,7 @@ class AuthPhoneViewController: UIViewController {
             numberField.shake()
         } else {
             PostAuthPhone(number: numberField.text!).start()
-        navigationController?.pushViewController(storyboard!.instantiateViewControllerWithIdentifier("AddContactViewController"), animated: true)
+            navigationController?.pushViewController(storyboard!.instantiateViewControllerWithIdentifier("VerifyPhoneViewController"), animated: true)
         }
     }
 
@@ -48,7 +50,7 @@ class AuthPhoneViewController: UIViewController {
         super.viewDidAppear(animated)
         keyboardWillShowObserver = NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardWillShowNotification, object: nil, queue: nil) {notification in
             UIView.animateWithDuration(0.2, animations: {
-                self.badgeTop.constant = -50.0
+                self.badgeTop.constant = -80.0
             })
         }
 
@@ -62,12 +64,12 @@ class AuthPhoneViewController: UIViewController {
     override func viewWillDisappear(animated: Bool) {
         NSNotificationCenter.defaultCenter().removeObserver(keyboardWillShowObserver)
         NSNotificationCenter.defaultCenter().removeObserver(keyboardWillHideObserver)
-        
+
         super.viewWillDisappear(animated)
     }
 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
-
+    
 }
