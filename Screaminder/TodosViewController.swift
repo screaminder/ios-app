@@ -25,6 +25,16 @@ class TodosViewController: UIViewController, UITableViewDataSource {
         tableView.dataSource = self
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: #selector(TodosViewController.refresh),
+            name: UIApplicationDidBecomeActiveNotification,
+            object: nil)
+    }
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
